@@ -7,4 +7,5 @@ hooks:
    AfterInstall:
      - location: hooks/env.sh
        timeout: 180
-
+     - location: hooks/start.sh
+       timeout: 180
