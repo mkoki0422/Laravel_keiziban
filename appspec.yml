@@ -1,0 +1,11 @@
+version: 0.0
+os: linux 
+files:
+  - source: /
+    destination: /var/www/Laravel_keiziban
+hooks:
+   AfterInstall:
+     - location: hooks/env.sh
+       timeout: 180
+     - location: hooks/start.sh
+       timeout: 180
