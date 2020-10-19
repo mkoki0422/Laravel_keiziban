@@ -7,4 +7,5 @@ WEB_DIR="/var/www/Laravel_keiziban"
 aws ssm get-parameter --with-decryption --name $PARAMATER --region $REGION --query Parameter.Value --output text >$WEB_DIR/.env
 # Clear laravel configuration cache
 cd $WEB_DIR
+sudo php artisan cache:clear
 sudo php artisan config:clear
